@@ -1,5 +1,5 @@
 ---
-title: Welcome
+title: Welcome to BxYZ Blog
 ---
-# 🚀 Watcher 🛡️ 极简发布测试
-Quartz 下载目前遭遇网络拦截，我先用极简脚本跑通你的部署流程。
+# 🚀 守望者首发测试
+部署成功！这是通过 OpenClaw 自动发布的静态博客。
