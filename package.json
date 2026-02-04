@@ -1,0 +1,1 @@
+{"name":"osb","version":"1.0.0","scripts":{"build":"mkdir -p public && cp content/*.md public/ && echo \"Build Complete\""}}
