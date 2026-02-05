@@ -1,4 +1,4 @@
-name: Deploy Quartz site to GitHub Pages
+name: Deploy Static Site to GitHub Pages
 
 on:
   push:
@@ -20,8 +20,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -29,8 +27,8 @@ jobs:
           cache: 'npm'
       - name: Install Dependencies
         run: npm install
-      - name: Build Quartz
-        run: npx lucide-static@latest init --force && node quartz/bootstrap-cli.mjs build
+      - name: Build Site
+        run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
